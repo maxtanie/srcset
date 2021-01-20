@@ -17,11 +17,35 @@
             height: auto;
 		}
 
+        header {
+            height: 100vw;
+            background-image: url('./images/flyers-2800.png');
+            background-size: cover;
+            background-position: top center;
+        }
         
+        @media screen and (max-width: 1068px) {
+            header {
+                background-image: url('./images/flyers-1000.png');
+            }
+            .img-little {
+                content:url("./images/final-fantasy-600.png")
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            header {
+                background-image: url('./images/flyers-495.png');
+            }
+            .img-little {
+                content:url("./images/final-fantasy-490.png")
+            
+        }
 	</style>
 <body>
 
-    <img class="img-big" src="images/flyers-2800.png" 
+    <header></header>
+    <!-- <img class="img-big" src="images/flyers-2800.png" 
         alt="Flyer my bootik" width="2800" height="750" >
                     
                     <img class="img-big" src="images/flyers-2800.png" width="495" height="320" 
@@ -33,23 +57,14 @@
                          images/flyers-2800.png 2800w"
                          sizes="(max-width: 495px) 247px,
                                  (max-width: 1000px) 500px,
-                                (max-width: 2800px) 1400px" >
+                                (max-width: 2800px) 1400px" > -->
 
     	<!-- Image for comparison -->
-		<img class="img-little" src="images/final-fantasy-490.png" 
-        alt="final fantasy" 
-        width="490" height="320">
 
-        <img class="img-little" src="images/final-fantasy-490.png" 
+        <img class="img-little" src="images/final-fantasy-800.png" 
+      
 			 alt="final fantasy" 
-			 width="490" height="320"
-			 srcset="
-			 images/final-fantasy-490.png 490w,
-			 images/final-fantasy-600.png 600w,
-			 images/final-fantasy-800.png 800w"
-			 sizes="(max-width: 490px) 245px,
-			 		(max-width: 600px) 300px,
-					(max-width: 800px) 400px" 
+             width="800" height="320"
 		>
 </body>
 </html>
