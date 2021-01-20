@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+	<!-- CSS -->
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+		.img-little,img{
+			max-width: 100%;
+            height: auto;
+		}
+
+        
+	</style>
+<body>
+
+    <img class="img-big" src="images/flyers-2800.png" 
+        alt="Flyer my bootik" width="100%" height="750" >
+                    
+                    <img class="img-big" src="images/flyers-2800.png" 
+                    width="100%" height="750"
+                    alt="Flyer my bootik"
+                    srcset="
+                         images/flyers-495.png 495w,
+                         images/flyers-1000.png 1000w,
+                         images/flyers-2800.png 2800w"
+                         sizes="(max-width: 495px) 247px,
+                                 (max-width: 1000px) 500px,
+                                (max-width: 2800px) 1400px" >
+
+    	<!-- Image for comparison -->
+		<img class="img-little" src="images/final-fantasy-490.png" 
+        alt="final fantasy" 
+        width="490" height="320">
+
+        <img class="img-little" src="images/final-fantasy-490.png" 
+			 alt="final fantasy" 
+			 width="490" height="320"
+			 srcset="
+			 images/final-fantasy-490.png 490w,
+			 images/final-fantasy-600.png 600w,
+			 images/final-fantasy-800.png 800w"
+			 sizes="(max-width: 490px) 245px,
+			 		(max-width: 600px) 300px,
+					(max-width: 800px) 400px" 
+		>
+</body>
+</html>
